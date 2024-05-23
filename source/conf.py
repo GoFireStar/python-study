@@ -28,6 +28,7 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 language = 'zh_CN'
+
 html_search_language = 'zh'
 
 # -- Options for HTML output -------------------------------------------------
@@ -53,3 +54,9 @@ source_parsers = {
     '.md': 'recommonmark.parser.CommonMarkParser',
 }
 source_suffix = ['.rst', '.md']
+
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+    'sphinx doc': ('https://www.sphinx-doc.org/zh-cn/master/usage/quickstart.html',None)
+}
